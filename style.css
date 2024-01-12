@@ -38,7 +38,7 @@ header .logo-text {
     background-color:transparent;
     border: 2.5px solid black;
     border-radius: 10px;
-    
+    display: none;
  }
 section .div-1 {
     width: 700px;
