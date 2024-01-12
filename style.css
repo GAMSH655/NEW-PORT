@@ -10,9 +10,13 @@ header{
     align-items: center;
     background-color: bisque;
 }
-header li {
+header ul {
     padding: 10px 20px ;
-    display: inline-block;
+    display: flex;
+    list-style: none;
+}
+header li {
+   padding: 10px;
 }
 header a {
     text-decoration: none;
@@ -25,19 +29,14 @@ a:hover {
     border-bottom: solid 3px salmon;
     transition: 0.5ms all ease-in-out;
 }
-header .logo-text {
+ .logo-text {
     font-size: 2rem;
     font-weight:bold;
     text-transform: capitalize;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
- #menu-btn {
-    width: 100px;
-    padding: 10px;
-    background-color:transparent;
-    border: 2.5px solid black;
-    border-radius: 10px;
+ .menu-btn  , .cancelBtn{
     display: none;
  }
 section .div-1 {
@@ -123,18 +122,42 @@ span{
     font-family: Arial, Helvetica, sans-serif;
 }
 @media only screen and (max-width:768px){
-     nav {
-         display: none;
-         width: 100%;
-         background-color: red;
+       header {
+        display: flex;
+        justify-content: space-around;
+         height: 80px;
+       }
+      .UL {
+         display:none;
+         width: 190px;
+         background-color:bisque;
          position: relative;
-         top: 100px;
+         top: 190px;
+         z-index: 1;
+         text-align: center;
+         border-radius: 10px;
+
+         animation-name: animatingProgrammer;
+         animation-duration: 5s;
+         animation-delay: none;
+          animation-play-state: running;
+        animation-direction: alternate;
+    }
+    @keyframes animatingProgrammer {
+        0%{transform: translateX(90px);}
+    }
+         li{
+         border-bottom: 2px solid black;
      }
-     .logo-text{
+      li:last-child{
+         border-bottom:none;
+      }
+      .logo-text{
          font-weight: lighter;
          font-size: 1rem;
-     }
-     section {
+         margin-left: 50px;
+     } 
+      section {
          flex-wrap: wrap;
          text-align: center;
      }
@@ -172,4 +195,27 @@ span{
      justify-content: space-around;
      flex-wrap: wrap;
    }
+   .menu-btn {
+    width: 100px;
+    padding: 10px;
+    background-color:transparent;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    display: block;
+    margin-right: 80px;
+ }
+ .headericon{
+     padding-left: 70px;
+ }
+  .cancelBtn {
+    width: 100px;
+    padding: 10px;
+    background-color:transparent;
+    display: block;
+    margin-left: 90px;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: black;
+    border: none;
+  }
 }
