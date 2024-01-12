@@ -49,8 +49,7 @@ animation-direction: alternate;
 }
 
 @keyframes animatingProgrammer {
-    0%{transform: translateX(50px);}
-    50%{ transform:scaleY(1.1);}
+    0%{transform: translateY(-90px);}
 }
 
 section .div-text {
@@ -70,8 +69,7 @@ animation-direction: reverse;
 }
 
 @keyframes animationtext {
-    0%{ transform: translateX(-70px);}
-    50%{ transform:scaleY(1.1);}
+    0%{ transform: translateX(70px);}
 }
 section {
     display: flex;
