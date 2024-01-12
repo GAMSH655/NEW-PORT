@@ -7,6 +7,7 @@ body{
 header{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     background-color: bisque;
 }
 header li {
@@ -31,9 +32,16 @@ header .logo-text {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
+ #menu-btn {
+    width: 100px;
+    padding: 10px;
+    background-color:transparent;
+    border: 2.5px solid black;
+    border-radius: 10px;
+ }
 section .div-1 {
     width: 700px;
-    padding: 100px;
+    padding: 50px;
    
 }
 .green-img  {
@@ -80,8 +88,7 @@ section {
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
-    width: 500px;
-
+ 
 }
 span{
     font-size: large;
@@ -113,4 +120,55 @@ span{
     font-size: xx-large;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width:768px){
+     nav {
+         display: none;
+         width: 100%;
+         background-color: red;
+         position: relative;
+         top: 100px;
+     }
+     .logo-text{
+         font-weight: lighter;
+         font-size: 1rem;
+     }
+     section {
+         flex-wrap: wrap;
+         text-align: center;
+     }
+     .welcome-text{
+       padding-right: 50px;
+       animation-name: animationtext;
+       animation-duration: 5s;
+       animation-delay: 2s;
+       animation-delay: none;
+       animation-play-state: running;
+      animation-direction: reverse;
+      
+    } 
+      @keyframes animationtext {
+          0%{ transform: translateX(-30px);}
+  
+     }
+   .green-img {
+     height: 300px;
+     width:300px;
+     padding: 0;
+
+     animation-name: animatingProgrammer;
+     animation-duration: 5s;
+     animation-delay: none;
+      animation-play-state: running;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes animatingProgrammer {
+    0%{transform: translateX(90px);}
+}
+   .tech-stack-container  {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+   }
 }
