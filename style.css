@@ -46,6 +46,9 @@ section {
     background-image: linear-gradient(rgba(22, 22, 21, 0.733) , rgba(22, 22, 21, 0.733) ), url('./assets/prog2.png');
     background-repeat: no-repeat;
     background-position: top;
+    background-size: contain;
+   background-origin: border-box;
+    
    
 }
 .welcome-text {
@@ -53,7 +56,7 @@ section {
     font-weight :300px;
     font-family:'Courier New', Courier, monospace;
     text-transform: uppercase;
-    padding: 90px;
+    padding: 100px;
     color: bisque;
 
     animation-name: animationtext;
