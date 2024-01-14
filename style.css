@@ -18,13 +18,13 @@ header ul {
 header li {
    padding: 10px;
 }
-header a {
+header #link{
     text-decoration: none;
     text-transform: capitalize;
     color: black;
     font-weight:bold;
 }
-a:hover {
+#link:hover {
     color: black;
     border-bottom: solid 3px salmon;
     transition: 0.5ms all ease-in-out;
@@ -47,8 +47,6 @@ section {
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
-    
-   
 }
 .welcome-text {
     font-size: 5rem;
@@ -61,6 +59,7 @@ section {
     animation-name: animationtext;
     animation-duration: 5s;
     animation-play-state: running;
+    animation-iteration-count: infinite;
  } 
    @keyframes animationtext {
        0%{ transform: translateY(-90px);}
@@ -88,6 +87,47 @@ section {
 }
 span{
     font-size: 4rem;
+}
+/* portfolio container */
+.portfolio-container {
+   display: flex;
+   margin-top: 50px;
+}
+.portBox{
+   background-color:burlywood;
+   margin: 10px;
+   width: 250px;
+   padding: 20px;
+   border-radius: 20px;
+}
+#portfolio-img{
+     height: 200px;
+     width: 200px;
+    /* padding-left: 20px; */
+    border-radius: 20px;
+    margin-left: 20px;
+}
+#linkBtn{
+   width: 120px;
+   padding: 5px;
+   background-color: black;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+#portfolio-link{
+   text-decoration: none;
+   text-align: center;
+   font-size: 1rem;
+   font-weight:bold;
+   color: white;
+}
+#portText{
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight:bold;
+   text-transform: capitalize;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-decoration: none;
 }
 @media only screen and (max-width:768px){
        header {
@@ -140,7 +180,7 @@ span{
       @keyframes animationtext {
           0%{ transform: translateX(-30px);}
      }
-   .green-img {
+     #programmer {
      height: 300px;
      width:300px;
      padding: 0;
@@ -155,11 +195,6 @@ span{
 @keyframes animatingProgrammer {
     0%{transform: translateX(90px);}
 }
-   .tech-stack-container  {
-     display: flex;
-     justify-content: space-around;
-     flex-wrap: wrap;
-   }
    .menu-btn {
     width: 100px;
     padding: 10px;
@@ -185,5 +220,25 @@ span{
   }
   a:hover{
     border-bottom: none;
+  }.parent-tech-stack-container{
+    flex-wrap: wrap;
   }
+  
+  #about-text{
+    font-weight: bold;
+    font-size: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .portfolio-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .welcome-text{
+     font-size: 2rem;
+  }
+
 }
