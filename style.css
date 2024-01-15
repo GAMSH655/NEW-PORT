@@ -49,23 +49,25 @@ section {
     background-size: contain;
 }
 .welcome-text {
-    font-size: 5rem;
-    font-weight :300px;
+    font-size: 4rem;
+    font-weight :900;
     font-family:'Courier New', Courier, monospace;
     text-transform: uppercase;
     padding: 100px;
+     text-align: center;
     color: bisque;
 
     animation-name: animationtext;
     animation-duration: 5s;
     animation-play-state: running;
     animation-iteration-count: infinite;
+    animation-direction:alternate-reverse ;
  } 
    @keyframes animationtext {
-       0%{ transform: translateY(-90px);}
+       0%{ transform: translateY(-30px);}
        50%{transform: translateY(30px);}
   }
-.stack-upper-text {
+.stack-upper-text , #porfolio-header-text {
     text-align: center;
     font-weight: bolder;
     font-size: xx-large;
