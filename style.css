@@ -101,6 +101,7 @@ span{
    width: 250px;
    padding: 20px;
    border-radius: 20px;
+   box-shadow: 2px 2px 2px 2px rgba(41, 39, 39, 0.829);
 }
 #portfolio-img{
      height: 200px;
@@ -176,7 +177,7 @@ span{
        animation-delay: 2s;
        animation-delay: none;
        animation-play-state: running;
-      animation-direction: reverse;
+       animation-direction: alternate;
       
     } 
       @keyframes animationtext {
