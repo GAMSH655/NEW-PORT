@@ -15,6 +15,9 @@ header ul {
     display: flex;
     list-style: none;
 }
+.mobile-view-header {
+   display: none;
+}
 header li {
    padding: 10px;
 }
@@ -23,11 +26,6 @@ header #link{
     text-transform: capitalize;
     color: black;
     font-weight:bold;
-}
-#link:hover {
-    color: black;
-    border-bottom: solid 3px salmon;
-    transition: 0.5ms all ease-in-out;
 }
  .logo-text {
     font-size: 2rem;
@@ -47,6 +45,8 @@ section {
     background-repeat: no-repeat;
     background-position: top;
     background-size: contain;
+    position: relative;
+    padding: 80px;
 }
 .welcome-text {
     font-size: 4rem;
@@ -106,7 +106,6 @@ span{
 #portfolio-img{
      height: 200px;
      width: 200px;
-    /* padding-left: 20px; */
     border-radius: 20px;
     margin-left: 20px;
 }
@@ -133,39 +132,54 @@ span{
    text-decoration: none;
 }
 @media only screen and (max-width:768px){
-       header {
-         height: 80px;
+       .Pc-view{
+        display: none;
        }
-      .UL {
-         display:none;
-         width: 190px;
-         background-color:bisque;
-         position: relative;
-         top: 190px;
-         z-index: 1;
-         text-align: center;
-         border-radius: 10px;
+    .mobile-view-header{
+        display:block;
+        backdrop-filter: 10px(10px);
+        background-color: bisque;
+        height: 100vh;
+        width: 300px;
+       position: absolute;
+        z-index: 1;
+       animation-name: slidingSideBar;
+       animation-duration: 2s;
+       animation-direction: alternate;
+       }
 
-         animation-name: animatingProgrammer;
-         animation-duration: 5s;
-         animation-delay: none;
-          animation-play-state: running;
-        animation-direction: alternate;
+
+       @keyframes  slidingSideBar {
+        0%{transform: translateX(-50px);}
+      }
+      
+    .mobile-UL {
+       height: 80vh;
+       display: block;
+       padding: 30px;
+
+
+       animation-name: slidingList;
+       animation-duration: 2s;
+       animation-direction: alternate;
     }
+    @keyframes  slidingList {
+      0%{transform: translateY(50px);}
+    }
+    
     @keyframes animatingProgrammer {
         0%{transform: translateX(90px);}
     }
-         li{
-         border-bottom: 2px solid black;
+         li:hover{
+          box-shadow: 2px 2px 2px 2px rgba(41, 39, 39, 0.829);
+          transform: translateX(18px);
+          transition: .2s all ease-in;
      }
-      li:last-child{
-         border-bottom:none;
-      }
       .logo-text{
-         font-weight: lighter;
-         font-size: 1rem;
-         margin-left: 50px;
+         font-weight: bolder;
+         font-size: 2rem;
      } 
+
       section {
          flex-wrap: wrap;
          text-align: center;
@@ -205,21 +219,18 @@ span{
     border: 2.5px solid black;
     border-radius: 10px;
     display: block;
-    margin-right: 80px;
  }
  .headericon{
-     padding-left: 70px;
+     padding-left: 20px;
  }
-  .cancelBtn {
+  .cancel-btn {
     width: 100px;
     padding: 10px;
     background-color:transparent;
+    border: 2.5px solid black;
+    border-radius: 10px;
     display: block;
-    margin-left: 90px;
-    font-size: 2rem;
-    font-weight: bolder;
-    color: black;
-    border: none;
+    margin: 20px;
   }
   a:hover{
     border-bottom: none;
