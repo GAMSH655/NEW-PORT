@@ -1,16 +1,19 @@
+*{
+   padding: 0;
+   margin: 0;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: bisque;
 }
-header ul {
+header ul { 
     padding: 10px 20px ;
     display: flex;
     list-style: none;
@@ -28,7 +31,7 @@ header #link{
     font-weight:bold;
 }
  .logo-text {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight:bold;
     text-transform: capitalize;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -39,13 +42,12 @@ header #link{
  }
  /* --------------------- */
 section {
-    display: flex;
-    justify-content: space-between;
+ 
     background-image: linear-gradient(rgba(22, 22, 21, 0.733) , rgba(22, 22, 21, 0.733) ), url('./assets/prog2.png');
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
+    background-size:contain;
     position: relative;
+    background-position: center;
 }
 .welcome-text {
     font-size: 4rem;
@@ -59,7 +61,7 @@ section {
 
     animation-name: animationtext;
     animation-duration: 5s;
-    animation-play-state: running;
+   
     animation-iteration-count: infinite;
     animation-direction:alternate ;
  } 
@@ -68,6 +70,7 @@ section {
        50%{transform: translateY(30px);}
   }
 .stack-upper-text , #porfolio-header-text {
+    padding: 20px;
     text-align: center;
     font-weight: bolder;
     font-size: xx-large;
@@ -91,9 +94,14 @@ span{
     font-size: 4rem;
 }
 /* portfolio container */
+.ouutter{
+  display:flex;
+  justify-content: center;
+}
 .portfolio-container {
-   display: flex;
-   margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1000px;
 }
 .portBox{
    background-color:burlywood;
@@ -113,8 +121,9 @@ span{
    width: 120px;
    padding: 5px;
    background-color: black;
-  border-radius: 10px;
-  margin-left: 50px;
+   border-radius: 10px;
+     margin-top: 20px;
+     margin-left: 65px;
 }
 #portfolio-link{
    text-decoration: none;
@@ -136,7 +145,7 @@ span{
         display: none;
        }
     .mobile-view-header{
-        display:block;
+        display:none;
         backdrop-filter: 10px(10px);
         background-color: bisque;
         height: 100vh;
@@ -154,7 +163,7 @@ span{
       }
       
     .mobile-UL {
-       height: 80vh;
+       height: 100vh;
        display: block;
        padding: 30px;
 
@@ -246,13 +255,22 @@ span{
     text-align: center;
   }
   .portfolio-container{
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    margin-top: 30px;
   }
   .welcome-text{
      font-size: 2rem;
   }
-
+  header{
+     padding: 20px;
+  }
+  .stack-upper-text{
+     padding-top: 10px;
+  }
+  #porfolio-header-text{
+   padding-top: 40px;
+  }
 }
