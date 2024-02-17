@@ -12,6 +12,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     background-color: bisque;
+    padding: 20px;
 }
 header ul { 
     padding: 10px 20px ;
@@ -31,7 +32,7 @@ header #link{
     font-weight:bold;
 }
  .logo-text {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight:bold;
     text-transform: capitalize;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -141,6 +142,33 @@ span{
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    text-decoration: none;
 }
+.footer{
+display: flex;
+ justify-content: space-evenly;
+ background: bisque;
+ margin-top: 50px;
+ flex-wrap: wrap;
+ padding: 50px;
+}
+.footer-text {
+  font-size: 2rem;
+  font-weight:bold;
+  text-transform: capitalize;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact-link {
+  padding-top: 40px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: black;
+  line-height: 30px;
+}
+#contact{
+   margin-top: 20px;
+}
+.fa-github , .fa-linkedin , .fa-twitter{
+   margin-left: 10px;
+}
 @media only screen and (max-width:768px){
        .Pc-view{
         display: none;
@@ -158,11 +186,10 @@ span{
        animation-direction: alternate;
        }
 
-
        @keyframes  slidingSideBar {
         0%{transform: translateX(-50px);}
       }
-      
+     
     .mobile-UL {
        height: 100vh;
        display: block;
@@ -187,7 +214,7 @@ span{
      }
       .logo-text{
          font-weight: bolder;
-         font-size: 2rem;
+         font-size: 1.5rem;
      } 
 
       section {
@@ -224,7 +251,7 @@ span{
 }
    .menu-btn {
     width: 100px;
-    padding: 10px;
+    padding: 20px;
     background-color:transparent;
     border: 2.5px solid black;
     border-radius: 10px;
@@ -235,7 +262,7 @@ span{
  }
   .cancel-btn {
     width: 100px;
-    padding: 10px;
+    padding: 20px;
     background-color:transparent;
     border: 2.5px solid black;
     border-radius: 10px;
@@ -276,5 +303,12 @@ span{
   }
   section{
     padding: 0px;
+  }
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contaCTMe{
+    margin: 30px;
   }
 }
