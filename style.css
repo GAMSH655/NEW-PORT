@@ -88,6 +88,7 @@ section {
 .parent-tech-stack-container{
      display: flex;
      justify-content: space-evenly;
+     padding: 40px;
 }
 #about-text{
      font-size: xx-large;
@@ -98,12 +99,14 @@ section {
      text-transform: capitalize;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      padding-top: 40px;
+     padding-left: 20px;
 }
 span{
     font-size: 4rem;
 }
 #programmer{
-  border-radius: 150px;
+   border-top-left-radius: 50px;
+   border-bottom-right-radius: 50px;
   height: 500px;
   width: 500px;
 }
@@ -160,6 +163,7 @@ display: flex;
  background-color:#694BBE78;
  flex-wrap: wrap;
  margin-top: 50px;
+ padding: 50px;
 }
 .footer-text {
   font-size: 2rem;
