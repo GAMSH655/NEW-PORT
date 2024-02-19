@@ -16,6 +16,9 @@ header{
     ;
     padding: 20px;
 }
+#link{
+  color: yellow;
+}
 header ul { 
     padding: 10px 20px ;
     display: flex;
@@ -91,6 +94,7 @@ section {
      padding: 40px;
 }
 #about-text{
+     text-align: center;
      font-size: xx-large;
      font-weight: bolder;
      letter-spacing: 5px;
