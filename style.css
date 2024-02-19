@@ -13,11 +13,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     background-color:#694BBE78;
-    ;
     padding: 20px;
-}
-#link{
-  color: yellow;
 }
 header ul { 
     padding: 10px 20px ;
@@ -188,6 +184,32 @@ display: flex;
 .fa-github , .fa-linkedin , .fa-twitter{
    margin-left: 10px;
 }
+.techStack{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 50px;
+   padding: 30px;
+}
+.stackholder{
+   display: flex;
+   justify-content: space-evenly;
+   margin: 100px;
+   box-shadow: 1.5px 1.5px 2px 2px black;
+   flex-wrap: wrap;
+}
+.stack1{
+   margin: 25px;
+   text-align: center;
+   line-height: 20px;
+   text-transform: capitalize;
+}
+
+.stack1 p{
+ padding-top: 15px;
+ font-size: 1.5rem;
+ font-weight: bold;
+}
 @media only screen and (max-width:768px){
        .Pc-view{
         display: none;
@@ -333,5 +355,11 @@ display: flex;
   }
   #link{
     color: yellow;
+  }
+  .stackholder{
+     display: grid;
+     grid-template-columns: repeat(2 , 1fr);
+     box-shadow: 0px 0px -2px #a793b3;
+     flex-wrap: wrap;
   }
 }
